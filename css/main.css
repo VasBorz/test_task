@@ -1,0 +1,89 @@
+/* Style the buttons that are used to open and close the accordion panel */
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+@font-face {
+    font-family: Myriad;
+    src: local("Myriad Pro"),
+    local("Myriad Pro"),
+    url(../fonts/MyriadPro-Regular.otf);
+    font-weight: bold;
+}
+
+
+.wrap{
+    width: 450px;
+    margin: 200px auto;
+}
+
+ul{
+    list-style: none;
+    padding: 30px 0 0 0;
+    margin: -20px 0px 5px 0px;
+    background-color: #eee;
+    border-radius: 0 0 25px 25px;
+}
+
+.logo{
+    background: url("../img/logo.png") no-repeat;
+    height: 39px;
+    width: 216px;
+    margin: 30px auto;
+}
+.li{
+    padding-bottom: 10px;
+    background-color: #eee;
+    padding-left: 15px;
+    color: #777;
+    font-size: 15px;
+    font-family: "Myriad", Times New Roman, Serif ;
+}
+.li:last-child{
+    border-radius: 25px;
+}
+button.accordion {
+    background-color: #e7e7e7;
+    color: #777;
+    cursor: pointer;
+    padding: 15px 18px 15px 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-family: "Myriad", Times New Roman, Serif ;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active {
+      background-color: #ff8663;
+      color: #fff;
+  }
+button.accordion.active:hover {
+    background-color: #ff8663;
+    color: #fff;
+}
+
+.img{
+       background: url('../img/arrow_inactive.png') no-repeat;
+       height: 12px;
+       width: 14px;
+       float: right;
+       margin-top: 2px;
+   }
+.img.active{
+    background: url('../img/arrow_active.png') no-repeat;
+    height: 12px;
+    width: 14px;
+    float: right;
+    margin-top: 2px;
+}
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    background-color: white;
+    display: none;
+}
